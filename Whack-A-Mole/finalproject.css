@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+
+#start{
+    width:100px;
+    height:40px;
+    border-radius:10px;
+    background-color:darkblue;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+}
+.mole{
+    width:180px;
+    height:200px; 
+    /*background:url('com.assignment.whackamole.png') no-repeat center center;background-size:contain;;*/
+    background-color:#452d2b; 
+    position:absolute;
+    left:35px;
+    bottom:20px;
+    
+    
+
+}
+.machine{
+    height:6000px;
+    width:600px;
+    background-color:orange;
+    left:300px;
+    position:absolute;
+    
+}
+.hole{
+    width:250px;
+    height:100px;
+    text-align:center;
+    position:absolute;
+    background-color:black;
+    border-radius:50%;
+    
+}
+.sign{
+    background: url('WhackAMole.jpg') no-repeat center center;background-size:contain;
+    position:absolute;
+    width:500px;
+    height:500px;
+}#score{
+    width:100px;
+    height:40px;
+    background-color:#fff5d9;
+    border-style:solid;
+    left:1800px;
+    position:absolute;
+    bottom:930px;
+    text-align:center;
+    line-height:40px;
+}
+.hole1{
+   top:100px; 
+   left:25px;
+}
+.hole2{
+    top:400px;
+    left:25px;
+}
+.hole3{
+    top:700px;
+    left:25px;
+}
+.hole4{
+    top:100px;
+    left:325px;
+}
+.hole5{
+    top:400px;
+    left:325px;
+}
+.hole6{
+    top:700px;
+    left:325px;
+}
+.mole1{
+    
+}
+.mole2{
+    
+}
+.mole3{
+    
+}
+.mole4{
+    
+}
+.mole5{
+    
+}
+.mole6{
+    
+}
+#slideUp{
+    width:100px;
+    height:40px;
+    border-radius:10px;
+    background-color:darkgoldenrod;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    
+}
