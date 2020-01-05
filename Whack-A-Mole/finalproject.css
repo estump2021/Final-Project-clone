@@ -1,5 +1,6 @@
 @CHARSET "UTF-8";
 
+body {margin:0;}
 #start{
     width:100px;
     height:40px;
@@ -10,74 +11,117 @@
     text-align:center;
     line-height:40px;
 }
-.mole{
-    width:180px;
-    height:200px; 
-    /*background:url('com.assignment.whackamole.png') no-repeat center center;background-size:contain;;*/
-    background-color:#452d2b; 
-    position:absolute;
-    left:35px;
-    bottom:20px;
-    
-    
-
+.mole {
+    position: relative;
+    width: 65%;
+    height: 165%;
+    background-image: url('mole.png');
+    background-size: 100% 100%;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:100%;
 }
 .machine{
-    height:6000px;
-    width:600px;
-    background-color:orange;
-    left:300px;
+    height: 100%;
+    width: 100%;
+    background-image: url('grassBackground.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    left:0px;
+    top:0px;
     position:absolute;
     
 }
-.hole{
-    width:250px;
-    height:100px;
-    text-align:center;
-    position:absolute;
-    background-color:black;
-    border-radius:50%;
-    
+.titleBar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    height:13%;
+    width: 100%;
+}
+.titleBar a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 28px 18px;
+    text-decoration:none;
+    font-size: 30px;
+}
+.titleBar a:hover {
+    background: #ddd;
+    color: black;
+}
+#score {
+    position: relative;
+    color: #f2f2f2;
+    line-height: 70px;
+    text-align: center;
+    font-size: 50px;
+    top:10px;
+}
+#display {
+    position: relative;
+    color: #f2f2f2;
+    line-height: 20px;
+    top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+.hole {
+    width: 22%;
+    height: 16%;
+    text-align: center;
+    position: absolute;
+    background-image: url('hole.png');
+    background-size: 100% 100%;
+}
+.holeFront {
+    background-image: url('hole2.png');
+    position: absolute;
+    width:100%;
+    height:50%;
+    background-size: 100% 100%;
+    top:52%;
 }
 .sign{
     background: url('WhackAMole.jpg') no-repeat center center;background-size:contain;
     position:absolute;
     width:500px;
     height:500px;
-}#score{
-    width:100px;
-    height:40px;
-    background-color:#fff5d9;
-    border-style:solid;
-    left:1800px;
-    position:absolute;
-    bottom:930px;
-    text-align:center;
-    line-height:40px;
 }
 .hole1{
-   top:100px; 
-   left:25px;
+   top:35%; 
+   left:2%;
 }
-.hole2{
-    top:400px;
-    left:25px;
+.hole2 {
+    top:35%;
+    left:27%;
 }
 .hole3{
-    top:700px;
-    left:25px;
+    top:35%;
+    left:52%;
 }
-.hole4{
-    top:100px;
-    left:325px;
+.hole4 {
+    top: 35%;
+    left: 77%;
 }
 .hole5{
-    top:400px;
-    left:325px;
+    top:80%;
+    left:2%;
 }
 .hole6{
-    top:700px;
-    left:325px;
+    top:80%;
+    left:27%;
+}
+.hole7 {
+    top: 80%;
+    left: 52%;
+}
+.hole8 {
+    top: 80%;
+    left: 77%;
 }
 .mole1{
     
@@ -96,6 +140,15 @@
 }
 .mole6{
     
+}
+.mole7 {
+
+}
+.mole8 {
+
+}
+.holeFront1{
+
 }
 #slideUp{
     width:100px;
