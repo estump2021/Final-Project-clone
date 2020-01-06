@@ -3,7 +3,7 @@ var score = 0
 
 $('.mole').click(
     function(){
-        $(this).hide('slide', { direction: "down" }, 400);
+        $(this).slideUp();
         score++;
         $("#score").text(score)
         $()
@@ -11,11 +11,9 @@ $('.mole').click(
     }
     
 );
-$('#start').click(
-    function () {
-        $('.mole').slideUp(function() {
-        ('.mole').slideDown(500);
-  })}
+$('#start').click(function() {
+console.log("hello");
+        $('.mole').slideUp()}
 );
 $('#slideUp').click(
         function() {
