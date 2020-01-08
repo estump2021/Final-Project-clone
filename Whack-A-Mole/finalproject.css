@@ -10,6 +10,8 @@ body {margin:0;}
     font-size:20px;
     text-align:center;
     line-height:40px;
+    position:absolute;
+    display:inline-block;
 }
 .mole {
     position: absolute;
@@ -34,6 +36,7 @@ body {margin:0;}
     
 }
 .titleBar {
+    float:left;
     overflow: hidden;
     background-color: #333;
     position: fixed;
@@ -42,7 +45,6 @@ body {margin:0;}
     width: 100%;
 }
 .titleBar a {
-    float:left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -55,7 +57,8 @@ body {margin:0;}
     color: black;
 }
 #score {
-    position: relative;
+    position: absolute;
+    display:inline-block;
     color: #f2f2f2;
     line-height: 70px;
     text-align: center;
@@ -160,5 +163,7 @@ body {margin:0;}
     font-size:20px;
     text-align:center;
     line-height:40px;
+    position:absolute;
+    display:inline-block;
     
 }

@@ -12,15 +12,14 @@ $('.mole').click(
     
 );
 $('#start').click(function() {
-console.log("hello");
-        $('.mole').slideUp()}
+        $('.mole').slideUp();
+    }
 );
 $('#slideUp').click(
         function() {
-        $('.mole').slideDown();
+            $('.mole').slideDown();
   }
-);
-
+)
 
 
 
