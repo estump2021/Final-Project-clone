@@ -15,11 +15,19 @@ $('#start').click(function() {
         $('.mole').slideUp();
     }
 );
-$('#slideUp').click(
-        function() {
-            $('.mole').slideDown();
-  }
-)
 
+function showMole() {
+    //pick a number between 1 and 8
+    var randMole = function (Math.random) {
+       
+    };
+    $(".mole"+randMole).slideDown();
+
+    //setTimeout(alertFunc, 3000);
+}
+
+function alertFunc() {
+  alert("Hello!");
+}
 
 

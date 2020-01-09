@@ -5,13 +5,12 @@ body {margin:0;}
     width:100px;
     height:40px;
     border-radius:10px;
-    background-color:darkblue;
+    background-color:#333;
     color:white;
-    font-size:20px;
+    font-size:50px;
     text-align:center;
-    line-height:40px;
+    line-height:50px;
     position:absolute;
-    display:inline-block;
 }
 .mole {
     position: absolute;
@@ -57,19 +56,18 @@ body {margin:0;}
     color: black;
 }
 #score {
-    position: absolute;
-    display:inline-block;
+    position: relative;
     color: #f2f2f2;
     line-height: 70px;
     text-align: center;
     font-size: 50px;
-    top:10px;
+    top:25px;
 }
 #display {
     position: relative;
     color: #f2f2f2;
     line-height: 20px;
-    top: 15px;
+    top: 30px;
     text-align: center;
     font-size: 25px;
 }
@@ -163,7 +161,6 @@ body {margin:0;}
     font-size:20px;
     text-align:center;
     line-height:40px;
-    position:absolute;
-    display:inline-block;
+    
     
 }
