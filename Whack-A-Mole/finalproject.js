@@ -14,24 +14,24 @@ $('.mole').click(function(){
 
 $('#start').click(function() {
         $('.mole').slideUp();
-        setInterval(function showMole() {
+       var moleStop = setInterval(function showMole() {
+            if (time == 0) {
+                clearInterval(moleShowing);
+            }
             var randMole = Math.floor((Math.random() * 8) + 1  );
             $(".mole"+randMole).slideDown();
             setTimeout(function hideMole() {
                 $(".mole"+randMole).slideUp();
                 },1500)
             console.log(randMole);
-        }, 500),
-        setInterval(function timeCoundown(){
+        }, 500);
+        var timerstop = setInterval(function timeCoundown() {
+            if (time == 0) {
+                clearInterval(timerStop);
+            }
             time--;
             $("#time").text(time); 
         }, 1000)
-        if (time <= 0) {
-            function timerstop() {
-                clearInterval(moleShowing);
-                clearInterval(timerStopping);
-            } 
-        }
     },
      
 );
