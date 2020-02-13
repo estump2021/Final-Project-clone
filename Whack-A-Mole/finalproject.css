@@ -3,7 +3,7 @@
 body {margin:0;}
 #start{
     width:100px;
-    height:40px;
+    height:20px;
     border-radius:10px;
     background-color:#333;
     color:white;
@@ -11,6 +11,7 @@ body {margin:0;}
     text-align:center;
     line-height:50px;
     position:absolute;
+    display:inline-block;
 }
 .mole {
     position: absolute;
@@ -166,12 +167,24 @@ body {margin:0;}
 }
 #time{
     width:100px;
-    height:40px;
-    border-radius:10px;
+    height:20px;
     background-color:#333;
     color:white;
     font-size:30px;
     text-align:center;
     line-height:50px;
     position:absolute;
+
+}
+#level{
+    width:100px;
+    height:20px;
+    border-radius:10px;
+    background-color:#333;
+    color:white;
+    font-size:50px;
+    text-align:center;
+    line-height:50px;
+    position:absolute;
+    display:inline-block;
 }
