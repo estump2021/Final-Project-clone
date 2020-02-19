@@ -166,12 +166,28 @@ body {margin:0;}
 }
 #time{
     width:100px;
-    height:40px;
+    height:20px;
     border-radius:10px;
     background-color:#333;
     color:white;
-    font-size:30px;
+    font-size:15px;
+    text-align:center;
+    line-height:30px;
+    position:absolute;
+}
+#level{
+    width:100px;
+    height:40px;
+    background-color:#333;
+    color:white;
+    font-size:10px;
     text-align:center;
     line-height:50px;
     position:absolute;
+}
+#leftside{
+
+}
+#rightside{
+    
 }
