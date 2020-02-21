@@ -168,16 +168,14 @@ body {margin:0;}
 #time{
     width:100px;
     height:20px;
-<<<<<<< HEAD
     border-radius:10px;
-=======
->>>>>>> 71ab100c50f295a2d4ac54803ca37113e55479c0
     background-color:#333;
     color:white;
-    font-size:15px;
+    font-size:50px;
     text-align:center;
     line-height:30px;
     position:absolute;
+    top:60px;
 }
 #level{
     width:100px;
@@ -188,17 +186,29 @@ body {margin:0;}
     text-align:center;
     line-height:50px;
     position:absolute;
-<<<<<<< HEAD
+
 }
 #leftside{
-
+position:absolute;
+left:0%;
 }
 #rightside{
-    
-=======
-
+position:absolute;
+right:10%;
 }
 #level{
+    width:50px;
+    height:20px;
+    border-radius:10px;
+    color:white;
+    font-size:50px;
+    text-align:center;
+    line-height:50px;
+    position:absolute;
+    display:inline-block;
+    left:120px;
+}
+#leveldisplay{
     width:100px;
     height:20px;
     border-radius:10px;
@@ -209,5 +219,8 @@ body {margin:0;}
     line-height:50px;
     position:absolute;
     display:inline-block;
->>>>>>> 71ab100c50f295a2d4ac54803ca37113e55479c0
+}
+#middle{
+    position:absolute;
+    left:45%;
 }
