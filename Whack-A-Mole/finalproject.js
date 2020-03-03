@@ -3,7 +3,7 @@ var score = 0;
 var randMole;// = Math.floor((Math.random() * 8) + 1  );
 var time = 30;
 var boinkSound = new Audio("Boink3.mp3")
-var level = 2;
+var level = 1;
 
 $('.mole').click(function(){
         $(this).slideUp();
@@ -38,6 +38,7 @@ if (level == 1) {
             if (score >= 25) {
                 level++;
                 $("#level").text(level); 
+                 call(levelup2);
             } 
             else {
                 alert("you Lose! press command + r to reset");
@@ -45,9 +46,12 @@ if (level == 1) {
         },30000)
     },);
 }
-if (level == 2) {
-    
-}
+var levelup2 = 
+    $('#start').click(function() {
+        if (level == 2) {
+            
+        }    
+    },);
 if (level == 3) {
 
 }
