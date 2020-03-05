@@ -1,7 +1,7 @@
 
 var randMole;// = Math.floor((Math.random() * 8) + 1  );
 var boinkSound = new Audio("Boink3.mp3")
-var level = 1;
+var level = 4;
 
 $('#start').click(function() {
     $('.mole').click(function(){
@@ -44,8 +44,7 @@ $('#start').click(function() {
         },32000)
     }
     if (level == 2) {
-        document.getElementById("mole").style.backgroundColor= url("mole2.png");
-        //url('mole2.png');
+        $(".mole").css("background-image",'url("mole2.png")');
         var moleShowing = setInterval(function showMole() {
             if (time == 0) {
                 clearInterval(moleShowing);
@@ -69,9 +68,8 @@ $('#start').click(function() {
         },32000)
     }
     if (level == 3) {
-        document.getElementsByClassName("machine").style.backgroundColor= url('grassBackground2.jpg');
-        document.getElementsByClassName("mole").style.backgroundColor= url('grassBackground2.jpg');
-        //url('mole3.png');
+        $(".mole").css("background-image",'url("mole3.png")');
+        $(".machine").css("background-image",'url("grassBackground3.jpg")');
         var moleShowing = setInterval(function showMole() {
             if (time == 0) {
                 clearInterval(moleShowing);
@@ -84,6 +82,30 @@ $('#start').click(function() {
             console.log(randMole);
         }, 500);
         setTimeout(function levelUp() {
+            if (score >= 45) {
+                level++;
+                $("#level").text(" FINAL");
+                alert("you beat level 3! press start to play level final!");
+            } 
+            else {
+                alert("you Lose! press command + r to reset");
+            }
+        },32000)
+     }
+     if (level == 4)  {
+         $(".machine").css("background-image",'url("underworldgateways4.jpg")');
+         var moleShowing = setInterval(function showMole() {
+            if (time == 0) {
+                clearInterval(moleShowing);
+            }
+            var randMole = Math.floor((Math.random() * 8) + 1  );
+            $(".mole"+randMole).slideDown();
+            setTimeout(function hideMole() {
+                $(".mole"+randMole).slideUp();
+                },250)
+            console.log(randMole);
+        }, 250);
+        setTimeout(function levelUp() {
             if (score >= 50) {
                 alert("congratlations, you win!")
             } 
@@ -91,7 +113,7 @@ $('#start').click(function() {
                 alert("you Lose! press command + r to reset");
             }
         },32000)
-     }       
+     }     
 },);
 
 
