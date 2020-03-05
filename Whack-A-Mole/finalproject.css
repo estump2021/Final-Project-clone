@@ -21,8 +21,8 @@ body {margin:0;}
     background-size: 100% 100%;
     margin-left:auto;
     margin-right:auto;
-    bottom:55px;
-    left:70px;
+    bottom:35%;
+    left:19%;
 }
 .machine{
     height: 100%;
@@ -194,7 +194,7 @@ left:0%;
 }
 #rightside{
 position:absolute;
-right:10%;
+right:15%;
 }
 #level{
     width:50px;

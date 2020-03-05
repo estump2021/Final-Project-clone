@@ -44,7 +44,8 @@ $('#start').click(function() {
         },32000)
     }
     if (level == 2) {
-        //document.getElementByid('machine').style.background-image = url('grassBackground.jpg');
+        document.getElementById("mole").style.backgroundColor= url("mole2.png");
+        //url('mole2.png');
         var moleShowing = setInterval(function showMole() {
             if (time == 0) {
                 clearInterval(moleShowing);
@@ -68,6 +69,9 @@ $('#start').click(function() {
         },32000)
     }
     if (level == 3) {
+        document.getElementsByClassName("machine").style.backgroundColor= url('grassBackground2.jpg');
+        document.getElementsByClassName("mole").style.backgroundColor= url('grassBackground2.jpg');
+        //url('mole3.png');
         var moleShowing = setInterval(function showMole() {
             if (time == 0) {
                 clearInterval(moleShowing);
@@ -91,3 +95,4 @@ $('#start').click(function() {
 },);
 
 
+//open preview in browser: python3 -m http.server 3000
